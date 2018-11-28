@@ -33,7 +33,7 @@ insmod all_video
 set default="0"
 set timeout=30
 
-menuentry "Debian Live" {
+menuentry "$DISTRO_NAME" {
     linux /vmlinuz boot=live quiet nomodeset
     initrd /initrd
 }
