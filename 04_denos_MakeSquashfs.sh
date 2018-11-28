@@ -7,7 +7,7 @@
 # ./04_denos_MakeSquashfs.sh
 
 # export LIVE_BOOT=LIVE_BOOT64
-require ./denos_config.txt
+source ./denos_config.txt
 
 mkdir -p $HOME/$LIVE_BOOT/{scratch,image/live}
 
