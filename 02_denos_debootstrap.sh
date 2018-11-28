@@ -6,7 +6,7 @@
 # As user Execute the script in a Terminal 
 
 # export LIVE_BOOT=LIVE_BOOT64
-require denos_config.txt
+source denos_config.txt
 
 mkdir $HOME/$LIVE_BOOT
 
