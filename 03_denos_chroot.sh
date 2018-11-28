@@ -7,7 +7,7 @@
 # ./03_denos_chroot.sh
 
 # export LIVE_BOOT=LIVE_BOOT64
-require ./denos_config.txt
+source ./denos_config.txt
 
 #echo "debian-live" > /etc/hostname
 echo $DISTRO_NAME > /etc/hostname 
