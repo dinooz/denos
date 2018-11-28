@@ -5,7 +5,9 @@
 
 # denos_get_started.sh - Initial Pre-Req Download Script.
 # Execute the following command in a Terminal to get started the DenOS download scripts...
-# wget https://raw.githubusercontent.com/dinooz/denos/master/Denos_HowTo.txt
+# wget https://raw.githubusercontent.com/dinooz/denos/master/denos_get_started.sh
+# chmod 755 denos_get_started.sh
+# ./denos_get_started.sh
 
 wget https://raw.githubusercontent.com/dinooz/denos/master/Denos_HowTo.txt
 wget https://raw.githubusercontent.com/dinooz/denos/master/Denos_HowTo.txt
