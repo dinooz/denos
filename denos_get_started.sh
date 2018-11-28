@@ -16,5 +16,6 @@ wget https://github.com/dinooz/denos/raw/master/03_denos_chroot_lxde.sh
 wget https://github.com/dinooz/denos/raw/master/04_denos_MakeSquashfs.sh
 wget https://github.com/dinooz/denos/raw/master/05_denos_BiosUEFI_ISO.sh
 wget https://github.com/dinooz/denos/raw/master/denos_config.txt
+wget https://github.com/dinooz/denos/raw/master/denos_clean.sh
 
 chmod 755 *.sh
