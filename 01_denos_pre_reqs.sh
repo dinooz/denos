@@ -16,3 +16,6 @@ apt install -y grub-pc-bin
 apt install -y grub-efi-amd64-bin
 apt install -y mtools
 
+echo " "
+echo "Execute ./02_denos_debootstrap.sh"
+echo " "
