@@ -45,3 +45,6 @@ ls -lh $HOME/$LIVE_BOOT
 ls -lRh $HOME/$LIVE_BOOT/scratch
 ls -lRh $HOME/$LIVE_BOOT/image
 
+echo " "
+echo "Execute ./05_denos_debootstrap.sh"
+echo " "
