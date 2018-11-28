@@ -17,7 +17,7 @@ stretch \
 $HOME/$LIVE_BOOT/chroot \
 http://ftp.us.debian.org/debian
 
-cp ./03_Dinux_Chroot.sh $HOME/$LIVE_BOOT/chroot
+cp ./03_*.sh $HOME/$LIVE_BOOT/chroot
 cp ./denos_config.txt $HOME/$LIVE_BOOT/chroot
 
 sudo chroot $HOME/$LIVE_BOOT/chroot
