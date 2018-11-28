@@ -12,4 +12,4 @@ source denos_config.txt
 sudo rm -R -f $HOME/$LIVE_BOOT
 
 sudo rm -R -f ./0*.sh
-sudo rm -R -f ./denos*.txt
+sudo rm -R -f ./*.txt
