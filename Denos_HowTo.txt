@@ -18,6 +18,18 @@
 # 2.- Customize the denos_config.txt configuration settings for your distro
 #     Update your installation FOLDER, DISTRO_NAME and VERSION
 # 3.- Start executing the scripts in order.
+
+./01_denos_pre_reqs.sh
+./02_denos_debootstrap.sh
+
+
+# Select Which Distro you like to Build...
+    ./03_denos_chroot.sh
+    ./03_denos_chroot_lxde.sh
+
+./04_denos_MakeSquashfs.sh
+./05_denos_BiosUEFI_ISO.sh
+
 #     In script 03 you can determine the packages to install
 #     Additionally multiple files added for Text Only or some Window Manager.
 # 4.- Option to built BIOS+UEFI for compatibility.
