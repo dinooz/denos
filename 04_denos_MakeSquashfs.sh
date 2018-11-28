@@ -9,6 +9,9 @@
 # export LIVE_BOOT=LIVE_BOOT64
 source ./denos_config.txt
 
+sudo rm -f ./03_*.sh $HOME/$LIVE_BOOT/chroot
+sudo rm -f ./denos_config.txt $HOME/$LIVE_BOOT/chroot
+
 mkdir -p $HOME/$LIVE_BOOT/{scratch,image/live}
 
 sudo mksquashfs \
