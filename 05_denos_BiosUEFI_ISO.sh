@@ -7,7 +7,7 @@
 # ./05_denos_BiosUEFI_ISO.sh
 
 # export LIVE_BOOT=LIVE_BOOT64
-require ./denos_config.txt
+source ./denos_config.txt
 
 grub-mkstandalone \
     --format=x86_64-efi \
