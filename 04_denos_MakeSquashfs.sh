@@ -24,7 +24,7 @@ cp $HOME/$LIVE_BOOT/chroot/boot/vmlinuz-* \
 cp $HOME/$LIVE_BOOT/chroot/boot/initrd.img-* \
     $HOME/$LIVE_BOOT/image/initrd
 
-cat <<'EOF' >$HOME/$LIVE_BOOT/scratch/grub.cfg
+cat <<EOF >$HOME/$LIVE_BOOT/scratch/grub.cfg
 
 search --set=root --file /DEBIAN_CUSTOM
 
@@ -33,7 +33,7 @@ insmod all_video
 set default="0"
 set timeout=30
 
-menuentry $DISTRO_NAME {
+menuentry "$DISTRO_NAME Live" {
     linux /vmlinuz boot=live quiet nomodeset
     initrd /initrd
 }
