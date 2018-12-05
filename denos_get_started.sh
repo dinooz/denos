@@ -17,6 +17,7 @@ wget https://github.com/dinooz/denos/raw/master/03_denos_chroot_xfce.sh
 wget https://github.com/dinooz/denos/raw/master/03_denos_chroot_kde.sh
 wget https://github.com/dinooz/denos/raw/master/03_denos_chroot_mate.sh
 wget https://github.com/dinooz/denos/raw/master/03_denos_chroot_plasma.sh
+wget https://github.com/dinooz/denos/raw/master/03_denos_chroot_e17.sh
 wget https://github.com/dinooz/denos/raw/master/04_denos_MakeSquashfs.sh
 wget https://github.com/dinooz/denos/raw/master/05_denos_BiosUEFI_ISO.sh
 wget https://github.com/dinooz/denos/raw/master/denos_config.txt
