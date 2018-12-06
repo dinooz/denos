@@ -1,0 +1,43 @@
+# DenOS - Debian Linux build from scratch with Debootstrap
+# Bernardino Lopez [ bernardino.lopez@gmail.com ]
+# Brains R Like Books only work when they are open - PHPOpenMonitor -
+# 11.27.18
+
+# Super easy, Lazy, scripted installation of Debian Linux OS.
+# Installation running form XUbuntu 18.10
+# Inspired in Will Haley build for i386 but adapted to amd64
+# https://willhaley.com/blog/custom-debian-hard-drive-install/ 
+# Will Haley
+
+# First Download the initial scrpipt denos_get_started.sh
+# wget ...
+# chmod 755 ./denos_get_started.sh
+# ./denos_get_started.sh
+
+# 1.- Initial script will download all the required files.
+# 2.- Customize the denos_config.txt configuration settings for your distro
+#     Update your installation FOLDER, DISTRO_NAME and VERSION
+# 3.- Start executing the scripts in order.
+
+./01_denos_pre_reqs.sh
+./02_denos_debootstrap.sh
+
+
+# Select Which Distro you like to Build...
+    ./03_denos_chroot.sh
+    ./03_denos_chroot_lxde.sh
+
+./04_denos_MakeSquashfs.sh
+./05_denos_BiosUEFI_ISO.sh
+
+#     In script 03 you can determine the packages to install
+#     Additionally multiple files added for Text Only or some Window Manager.
+# 4.- Option to built BIOS+UEFI for compatibility.
+# 5.- The result ISO Image will be from 200MB Text Only to 300MB LXDE
+# 6.- Copy the ISO and boot from it =) 
+#     ENJOY IT
+#     
+ 
+
+# TODO
+# 7.- Installation to Hard Drive ... work in progress...  
