@@ -8,14 +8,14 @@
 # chmod 755 denos_get_started.sh
 # ./denos_get_started.sh
 
-wget https://github.com/dinooz/denos/raw/master/Denos_HowTo.txt
-wget https://github.com/dinooz/denos/raw/master/01_denos_pre_reqs.sh
-wget https://github.com/dinooz/denos/raw/master/02_denos_debootstrap.sh
-wget https://github.com/dinooz/denos/raw/master/03_denos_chroot.sh
-wget https://github.com/dinooz/denos/raw/master/03_denos_chroot_lxde.sh
-wget https://github.com/dinooz/denos/raw/master/04_denos_MakeSquashfs.sh
-wget https://github.com/dinooz/denos/raw/master/05_denos_BiosUEFI_ISO.sh
-wget https://github.com/dinooz/denos/raw/master/denos_config.txt
-wget https://github.com/dinooz/denos/raw/master/denos_clean.sh
+wget https://github.com/dinooz/denos/raw/master/i386/Denos_HowTo.txt
+wget https://github.com/dinooz/denos/raw/master/i386/01_denos_pre_reqs.sh
+wget https://github.com/dinooz/denos/raw/master/i386/02_denos_debootstrap.sh
+wget https://github.com/dinooz/denos/raw/master/i386/03_denos_chroot.sh
+wget https://github.com/dinooz/denos/raw/master/i386/03_denos_chroot_lxde.sh
+wget https://github.com/dinooz/denos/raw/master/i386/04_denos_MakeSquashfs.sh
+wget https://github.com/dinooz/denos/raw/master/i386/05_denos_BiosUEFI_ISO.sh
+wget https://github.com/dinooz/denos/raw/master/i386/denos_config.txt
+wget https://github.com/dinooz/denos/raw/master/i386/denos_clean.sh
 
 chmod 755 *.sh
