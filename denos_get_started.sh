@@ -22,6 +22,7 @@ wget https://github.com/dinooz/denos/raw/master/03_denos_chroot_e17.sh
 wget https://github.com/dinooz/denos/raw/master/03_denos_chroot_i3.sh
 wget https://github.com/dinooz/denos/raw/master/03_denos_chroot_openbox.sh
 wget https://github.com/dinooz/denos/raw/master/03_denos_chroot_awesome.sh
+wget https://raw.githubusercontent.com/dinooz/denos/master/03_denos_chroot_lxqt.sh
 # Working on this scripts...
 wget https://github.com/dinooz/denos/raw/master/03_denos_chroot_cinnamon.sh
 wget https://github.com/dinooz/denos/raw/master/03_denos_chroot_pantheon.sh
