@@ -23,10 +23,18 @@ apt-get install -y --no-install-recommends \
 apt-get install -y --no-install-recommends \
     network-manager net-tools wireless-tools wpagui \
     curl openssh-server openssh-client \
-    blackbox xserver-xorg-core xserver-xorg xinit xterm \
+    xserver-xorg-core xserver-xorg xinit xterm \
     screenfetch screen lxterminal vim \
-    nano lxde* && \
+    lightdm lxqt-core \
+    nano && \
 apt-get clean
+
+echo "exec startlxqt" > /root/.xinitrc
+chmod 755 /root/.xinitrc
+
+echo -e "127.0.0.1\tlocalhost" > /etc/hosts
+echo -e "127.0.0.1\tDenOS" >> /etc/hosts
+
 
 passwd root
 
