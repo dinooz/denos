@@ -1,0 +1,5 @@
+DEST_DRIVE=/dev/sda
+DEST_PART=/dev/sda1
+TEMP_MNT=/mnt/denos
+DISTRO_NAME=DenOS-64
+VERSION=1.0
