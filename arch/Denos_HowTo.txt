@@ -1,0 +1,31 @@
+# DenOS - Arch Linux build from scratch with Pacstrap
+# Bernardino Lopez [ bernardino.lopez@gmail.com ]
+# Brains R Like Books only work when they are open - PHPOpenMonitor -
+# 05.15.20
+
+# Super easy, Lazy, scripted installation of Arch Linux OS.
+# Installation running form Arch Install ISO
+# Inspired in YouTube Video - EzNixOS 
+# URL: https://www.youtube.com/watch?v=m_cKO5UCsq8
+
+# First Download the initial scrpipt denos_get_started.sh
+# wget ...
+# chmod 755 ./denos_get_started.sh
+# ./denos_get_started.sh
+
+# 1.- Initial script will download all the required files.
+# 2.- Customize the denos_config.txt configuration settings for your distro
+#     Update your installation FOLDER, DISTRO_NAME and VERSION
+# 3.- Start executing the scripts in order.
+
+./01_denos_pre_reqs.sh
+./02_denos_pacstrap.sh
+
+
+# Select Which Distro you like to Build...
+    ./03_denos_chroot.sh
+    ./03_denos_chroot_lxde.sh
+
+#
+#     ENJOY IT
+#     
