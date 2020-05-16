@@ -8,6 +8,11 @@
 # genfstab -U -p /mnt >> /mnt/etc/fstab
 genfstab -U -p /mnt >> /mnt/etc/fstab
 
+cp denos_config.txt /mnt
+cp 03*.sh /mnt
+
 echo " "
-echo "Execute ./03_denos_pacstrap.sh"
+echo "Execute /03_denos_chroot.sh"
 echo " "
+
+arch-chroot /mnt
