@@ -39,7 +39,7 @@ grub-install --recheck /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
 
 # Clean files
-rm /03_*.sh 
+rm /03_* 
 rm /denos_config.txt 
 
 exit
