@@ -11,6 +11,8 @@
 wget https://raw.githubusercontent.com/dinooz/denos/master/arch/Denos_HowTo.txt
 wget https://raw.githubusercontent.com/dinooz/denos/master/arch/01_denos_pre_reqs.sh
 wget https://raw.githubusercontent.com/dinooz/denos/master/arch/01_denos_pre_reqs_x.sh
+wget https://raw.githubusercontent.com/dinooz/denos/master/arch/01_denos_pre_reqs_xfce.sh
+wget https://raw.githubusercontent.com/dinooz/denos/master/arch/01_denos_pre_reqs_plasma.sh
 wget https://raw.githubusercontent.com/dinooz/denos/master/arch/02_denos_genfstab.sh
 wget https://raw.githubusercontent.com/dinooz/denos/master/arch/03_denos_chroot.sh
 wget https://raw.githubusercontent.com/dinooz/denos/master/arch/denos_config.txt
