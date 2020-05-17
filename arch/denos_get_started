@@ -9,13 +9,13 @@
 # ./denos_get_started.sh
 
 wget https://raw.githubusercontent.com/dinooz/denos/master/arch/Denos_HowTo.txt
-wget https://raw.githubusercontent.com/dinooz/denos/master/arch/01_denos_pre_reqs.sh
-wget https://raw.githubusercontent.com/dinooz/denos/master/arch/01_denos_pre_reqs_x.sh
-wget https://raw.githubusercontent.com/dinooz/denos/master/arch/01_denos_pre_reqs_xfce.sh
-wget https://raw.githubusercontent.com/dinooz/denos/master/arch/01_denos_pre_reqs_plasma.sh
-wget https://raw.githubusercontent.com/dinooz/denos/master/arch/02_denos_genfstab.sh
-wget https://raw.githubusercontent.com/dinooz/denos/master/arch/03_denos_chroot.sh
+wget https://raw.githubusercontent.com/dinooz/denos/master/arch/01_denos_pre_reqs
+wget https://raw.githubusercontent.com/dinooz/denos/master/arch/01_denos_pre_reqs_x
+wget https://raw.githubusercontent.com/dinooz/denos/master/arch/01_denos_pre_reqs_xfce
+wget https://raw.githubusercontent.com/dinooz/denos/master/arch/01_denos_pre_reqs_plasma
+wget https://raw.githubusercontent.com/dinooz/denos/master/arch/02_denos_genfstab
+wget https://raw.githubusercontent.com/dinooz/denos/master/arch/03_denos_chroot
 wget https://raw.githubusercontent.com/dinooz/denos/master/arch/denos_config.txt
-wget https://raw.githubusercontent.com/dinooz/denos/master/arch/denos_clean.sh
+wget https://raw.githubusercontent.com/dinooz/denos/master/arch/denos_clean
 
 chmod 755 *.sh
