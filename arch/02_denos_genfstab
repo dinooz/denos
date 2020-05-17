@@ -9,7 +9,7 @@
 genfstab -U -p /mnt >> /mnt/etc/fstab
 
 cp denos_config.txt /mnt
-cp 03*.sh /mnt
+cp 03* /mnt
 
 echo " "
 echo "Execute /03_denos_chroot.sh"
