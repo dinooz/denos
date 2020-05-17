@@ -19,4 +19,3 @@ wget https://raw.githubusercontent.com/dinooz/denos/master/arch/denos_config.txt
 wget https://raw.githubusercontent.com/dinooz/denos/master/arch/denos_clean.sh
 
 chmod 755 *.sh
-
