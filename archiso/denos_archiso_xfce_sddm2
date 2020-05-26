@@ -1,0 +1,82 @@
+# DenOS - Arch Linux LiveCD from Archiso
+# Bernardino Lopez [ bernardino.lopez@gmail.com ]
+# 05.25.20
+# denos_archiso_xfce_sddm.sh
+
+# Create livecd user to build your ISO
+# 
+# useradd -m livecd
+# passwd livecd
+#
+# vi /etc/sudoers -> Add livecd
+# su within /home/livecd
+
+# Install Pre-Reqs
+pacman -Sy --noconfirm make squashfs-tools libisoburn dosfstools patch lynx devtools git
+pacman -Sy --noconfirm archiso
+
+# Install Archiso Initial Files
+cp -r /usr/share/archiso/configs/releng/* /home/livecd && cd /home/livecd
+
+# Download the splash.png
+wget https://github.com/dinooz/denos/raw/master/archiso/ArchOS_Live.png
+mv ArchOS_Live.png syslinux/splash.png
+
+# Lets Setup our Packages
+cat <<EOF > packages.x86_64
+arch-install-scripts
+base
+base-devel
+linux
+linux-firmware
+grub
+grub-bios
+os-prober
+net-tools
+networkmanager
+mtr
+dhcp
+mkinitcpio
+dracut
+openssh
+vim
+wget
+screen
+htop
+nginx
+xorg-server
+xorg-apps
+xorg-xinit
+xterm
+lxterminal
+xfce4
+xfce4-goodies
+sddm
+EOF
+
+# Lets customize our Shell
+# mkdir airootfs/etc/skel
+# cp ~/.bashrc /airootfs/etc/skel/
+
+# Lets Setup the hostname
+echo "dinux" > airootfs/etc/hostname
+
+# Disable Autologin
+rm -R -f airootfs/etc/systemd/system/getty@tty1.service.d
+
+# Adding Post-Install Tasks
+echo ""  >> airootfs/root/customize_airootfs.sh
+echo "# Add Live User"  >> airootfs/root/customize_airootfs.sh
+echo "useradd -m -G wheel -s /bin/bash live" >> airootfs/root/customize_airootfs.sh
+echo "# Setup Passwords users: live and root"  >> airootfs/root/customize_airootfs.sh
+echo "echo \"live:live\"|chpasswd" >> airootfs/root/customize_airootfs.sh
+echo "echo \"root:toor\"|chpasswd" >> airootfs/root/customize_airootfs.sh
+echo ""  >> airootfs/root/customize_airootfs.sh
+echo "# Start Some Services"  >> airootfs/root/customize_airootfs.sh
+echo "systemctl enable NetworkManager" >> airootfs/root/customize_airootfs.sh
+echo "systemctl enable sshd" >> airootfs/root/customize_airootfs.sh
+echo "systemctl enable nginx" >> airootfs/root/customize_airootfs.sh
+echo "systemctl enable sddm" >> airootfs/root/customize_airootfs.sh
+echo "systemctl set-default graphical.target" >> airootfs/root/customize_airootfs.sh
+echo "chsh root -s /bin/bash" >> airootfs/root/customize_airootfs.sh
+
