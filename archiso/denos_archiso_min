@@ -1,6 +1,6 @@
 # DenOS - Arch Linux LiveCD from Archiso
 # Bernardino Lopez [ bernardino.lopez@gmail.com ]
-# 05.24.20
+# 05.25.20
 # denos_archiso_min.sh
 
 # Create livecd user to build your ISO
@@ -12,11 +12,15 @@
 # su within /home/livecd
 
 # Install Pre-Reqs
-pacman -Sy make squashfs-tools libisoburn dosfstools patch lynx devtools git
-pacman -Sy archiso
+pacman -Sy --noconfirm make squashfs-tools libisoburn dosfstools patch lynx devtools git
+pacman -Sy --noconfirm archiso
 
 # Install Archiso Initial Files
 cp -r /usr/share/archiso/configs/releng/* /home/livecd && cd /home/livecd
+
+# Download the splash.png
+wget https://github.com/dinooz/denos/raw/master/archiso/ArchOS_Live.png
+mv ArchOS_Live.png syslinux/splash.png
 
 # Lets Setup our Packages
 cat <<EOF > packages.x86_64
@@ -36,8 +40,10 @@ mkinitcpio
 dracut
 openssh
 vim
+git
 wget
 screen
+screenfetch
 htop
 nginx
 EOF
@@ -64,4 +70,4 @@ echo "# Start Some Services"  >> airootfs/root/customize_airootfs.sh
 echo "systemctl enable NetworkManager" >> airootfs/root/customize_airootfs.sh
 echo "systemctl enable sshd" >> airootfs/root/customize_airootfs.sh
 echo "systemctl enable nginx" >> airootfs/root/customize_airootfs.sh
-
+echo "chsh root -s /bin/bash" >> airootfs/root/customize_airootfs.sh
