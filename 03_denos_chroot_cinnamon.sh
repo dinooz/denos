@@ -24,7 +24,7 @@ apt-get install -y --no-install-recommends \
     network-manager net-tools wireless-tools wpagui \
     curl openssh-server openssh-client \
     xserver-xorg-core xserver-xorg xinit xterm \
-    screenfetch screen lxterminal vim \
+    screenfetch screen lxterminal vim iputils-ping \
     cinnamon-desktop-environment \
     nano && \
 apt-get clean

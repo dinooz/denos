@@ -24,7 +24,7 @@ apt-get install -y --no-install-recommends \
     network-manager net-tools wireless-tools wpagui \
     curl openssh-server openssh-client \
     blackbox xserver-xorg-core xserver-xorg xinit xterm \
-    screenfetch screen vim \
+    screenfetch screen vim iputils-ping \
     nano kde-full && \
 apt-get clean
 

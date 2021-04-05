@@ -24,7 +24,7 @@ apt-get install -y --no-install-recommends \
     network-manager net-tools wireless-tools wpagui \
     curl openssh-server openssh-client \
     blackbox xserver-xorg-core xserver-xorg xinit xterm \
-    screenfetch screen lxterminal vim \
+    screenfetch screen lxterminal vim iputils-ping \
     gnome-session gnome-shell gnome-themes \
     gnome-terminal gnome-control-center nautilus \
     gnome-icon-theme gdm3 \

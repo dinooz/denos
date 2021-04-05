@@ -24,7 +24,7 @@ apt-get install -y --no-install-recommends \
     network-manager net-tools wireless-tools wpagui \
     curl openssh-server openssh-client \
     xserver-xorg-core xserver-xorg xinit xterm \
-    screenfetch screen lxterminal vim \
+    screenfetch screen lxterminal vim iputils-ping \
     lightdm i3 i3status dmenu i3lock xbacklight feh conky \
     nano && \
 apt-get clean
