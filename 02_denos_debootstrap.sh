@@ -13,7 +13,7 @@ mkdir $HOME/$LIVE_BOOT
 sudo debootstrap \
 --arch=amd64 \
 --variant=minbase \
-stretch \
+stable \
 $HOME/$LIVE_BOOT/chroot \
 http://ftp.us.debian.org/debian
 
