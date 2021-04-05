@@ -18,7 +18,7 @@ apt-get update && \
 apt-get install -y --no-install-recommends \
     linux-image-amd64 \
     live-boot \
-    systemd-sysv
+    sysvinit-core
 
 apt-get install -y --no-install-recommends \
     network-manager net-tools wireless-tools wpagui \
