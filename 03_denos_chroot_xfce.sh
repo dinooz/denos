@@ -9,8 +9,8 @@
 # export LIVE_BOOT=LIVE_BOOT64
 source ./denos_config.txt
 
-#echo "debian-live" > /etc/hostname
-echo $DISTRO_NAME > /etc/hostname 
+# Set Hostname
+echo $DISTRO_HOSTNAME > /etc/hostname 
 
 apt-cache search linux-image
 
@@ -27,6 +27,14 @@ apt-get install -y --no-install-recommends \
     screenfetch screen lxterminal vim iputils-ping \
     nano xfce4* && \
 apt-get clean
+
+echo -e "127.0.0.1\tlocalhost" > /etc/hosts
+echo -e "127.0.0.1\t$DISTRO_HOSTNAME" >> /etc/hosts
+
+# Create live user
+#useradd -m live
+# Change user live password to : newpassword
+#echo 'live:live' | chpasswd
 
 passwd root
 
