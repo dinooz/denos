@@ -37,7 +37,9 @@
 # 6.- Copy the ISO and boot from it =) 
 #     ENJOY IT
 #     
- 
+
+# NEW
+4.7.21 Added Live user creation on Script 01. Just uncomment 2 Lines 
 
 # TODO
 # 7.- Installation to Hard Drive ... work in progress...  

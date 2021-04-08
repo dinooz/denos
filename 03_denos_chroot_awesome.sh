@@ -26,6 +26,7 @@ apt-get install -y --no-install-recommends \
     xserver-xorg-core xserver-xorg xinit xterm \
     screenfetch screen lxterminal vim iputils-ping \
     lightdm awesome awesome-extra \
+    psmisc htop nmap git \
     nano && \
 apt-get clean
 
@@ -38,7 +39,7 @@ echo -e "127.0.0.1\tlocalhost" > /etc/hosts
 echo -e "127.0.0.1\t$DISTRO_HOSTNAME" >> /etc/hosts
 
 # Create live user
-#useradd -m live
+#useradd -m live -s /bin/bash
 # Change user live password to : newpassword
 #echo 'live:live' | chpasswd
 

@@ -28,11 +28,17 @@ apt-get install -y --no-install-recommends \
     gnome-session gnome-shell gnome-themes \
     gnome-terminal gnome-control-center nautilus \
     gnome-icon-theme gdm3 \
+    psmisc htop nmap git \
     nano task-mate-desktop && \
 apt-get clean
 
 echo -e "127.0.0.1\tlocalhost" > /etc/hosts
 echo -e "127.0.0.1\t$DISTRO_HOSTNAME" >> /etc/hosts
+
+# Create live user
+#useradd -m live -s /bin/bash
+# Change user live password to : newpassword
+#echo 'live:live' | chpasswd
 
 passwd root
 
