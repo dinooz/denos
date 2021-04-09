@@ -25,7 +25,7 @@ apt-get install -y --no-install-recommends \
     curl openssh-server openssh-client \
     blackbox xserver-xorg-core xserver-xorg xinit xterm \
     screenfetch screen lxterminal vim iputils-ping \
-    psmisc htop nmap wget git \
+    psmisc htop nmap firefox-esr wget git \
     nano lxde* && \
 apt-get clean
 
