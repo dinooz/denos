@@ -26,7 +26,7 @@ apt-get install -y --no-install-recommends \
     xserver-xorg-core xserver-xorg xinit xterm \
     screenfetch screen lxterminal vim iputils-ping \
     lightdm awesome awesome-extra \
-    psmisc htop nmap git \
+    psmisc htop nmap wget git \
     nano && \
 apt-get clean
 

@@ -25,8 +25,8 @@ apt-get install -y --no-install-recommends \
     curl openssh-server openssh-client \
     blackbox xserver-xorg-core xserver-xorg xinit xterm \
     screenfetch screen lxterminal vim iputils-ping \
-    psmisc htop nmap git \
-    nano xfce4* && \
+    psmisc htop nmap wget git \
+    nano lightdm xfce4* && \
 apt-get clean
 
 echo -e "127.0.0.1\tlocalhost" > /etc/hosts
