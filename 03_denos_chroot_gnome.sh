@@ -28,7 +28,7 @@ apt-get install -y --no-install-recommends \
     gnome-session gnome-shell gnome-themes \
     gnome-terminal gnome-control-center nautilus \
     gnome-icon-theme gdm3 \
-    psmisc htop nmap firefox-esr wget git \
+    psmisc htop nmap firefox-esr wget git ca-certificates \
     nano task-mate-desktop && \
 apt-get clean
 

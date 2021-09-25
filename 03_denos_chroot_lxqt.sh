@@ -26,7 +26,7 @@ apt-get install -y --no-install-recommends \
     xserver-xorg-core xserver-xorg xinit xterm \
     screenfetch screen lxterminal vim iputils-ping \
     lightdm lxqt-core \
-    psmisc htop nmap firefox-esr wget git \
+    psmisc htop nmap firefox-esr wget git ca-certificates \
     nano && \
 apt-get clean
 
