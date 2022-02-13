@@ -33,6 +33,9 @@ insmod all_video
 set default="0"
 set timeout=30
 
+menu_color_normal=white/dark-gray
+menu_color_highlight=light-green/dark-gray
+
 menuentry "$DISTRO_NAME Live" {
     linux /vmlinuz boot=live quiet nomodeset
     initrd /initrd
