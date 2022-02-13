@@ -13,6 +13,7 @@ wget https://github.com/dinooz/denos/raw/master/01_denos_pre_reqs.sh
 wget https://github.com/dinooz/denos/raw/master/02_denos_debootstrap.sh
 
 wget https://github.com/dinooz/denos/raw/master/03_denos_chroot.sh
+wget https://raw.githubusercontent.com/dinooz/denos/master/03_denos_chroot_docker.sh
 wget https://github.com/dinooz/denos/raw/master/03_denos_chroot_lxde.sh
 wget https://github.com/dinooz/denos/raw/master/03_denos_chroot_xfce.sh
 wget https://github.com/dinooz/denos/raw/master/03_denos_chroot_kde.sh
