@@ -29,7 +29,7 @@ apt-get install -y --no-install-recommends \
     gnome-terminal gnome-control-center nautilus \
     gnome-icon-theme gdm3 \
     psmisc htop nmap firefox-esr wget git ca-certificates \
-    nano task-mate-desktop && \
+    nano fdisk task-mate-desktop && \
 apt-get clean
 
 echo -e "127.0.0.1\tlocalhost" > /etc/hosts

@@ -27,7 +27,7 @@ apt-get install -y --no-install-recommends \
     screenfetch screen lxterminal vim iputils-ping \
     lightdm lxqt-core \
     psmisc htop nmap firefox-esr wget git ca-certificates \
-    nano && \
+    nano fdisk && \
 apt-get clean
 
 echo "exec startlxqt" > /root/.xinitrc

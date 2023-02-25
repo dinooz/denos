@@ -27,7 +27,7 @@ apt-get install -y --no-install-recommends \
     screenfetch screen lxterminal vim iputils-ping \
     lightdm i3 i3status dmenu i3lock xbacklight feh conky \
     psmisc htop nmap firefox-esr wget git ca-certificates \
-    nano && \
+    nano fdisk && \
 apt-get clean
 
 echo "exec i3" > /root/.xinitrc

@@ -26,7 +26,7 @@ apt-get install -y --no-install-recommends \
     blackbox xserver-xorg-core xserver-xorg xinit xterm \
     screenfetch screen lxterminal vim iputils-ping \
     psmisc htop nmap firefox-esr wget git ca-certificates \
-    nano task-mate-desktop && \
+    nano fdisk task-mate-desktop && \
 apt-get clean
 
 echo -e "127.0.0.1\tlocalhost" > /etc/hosts

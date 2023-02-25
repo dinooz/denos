@@ -27,7 +27,7 @@ apt-get install -y --no-install-recommends \
     screenfetch screen lxterminal vim iputils-ping \
     lightdm awesome awesome-extra \
     psmisc htop nmap firefox-esr wget git ca-certificates \
-    nano && \
+    nano fdisk && \
 apt-get clean
 
 echo "exec awesome" > /root/.xinitrc
